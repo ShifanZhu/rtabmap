@@ -1160,7 +1160,7 @@ Transform OdometryORBSLAM::computeTransform(
 	UINFO("Odom update time = %fs, map points=%d, keyframes=%d, lost=%s", timer.elapsed(), totalMapPoints, totalKfs, t.isNull()?"true":"false");
 
 #else
-	UERROR("RTAB-Map is not built with ORB_SLAM support! Select another visual odometry approach.");
+	UERROR("RTAB-Map is not built with ORB_SLAM support! !   !Select another visual odometry approach.");
 #endif
 	return t;
 }
